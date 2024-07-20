@@ -2357,6 +2357,350 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 /* Page - Home */
 
+.front-page__blockText {
+  padding-bottom: 56px;
+  padding-top: 53px;
+}
+
+.front-page__blockText h1,
+.front-page__blockText h2,
+.front-page__blockText h3,
+.front-page__blockText h4,
+.front-page__blockText h5,
+.front-page__blockText h6 {
+  color: #5195B2;
+  margin: 0;
+}
+
+.front-page__blockText h1,
+.front-page__blockText h2,
+.front-page__blockText h3,
+.front-page__blockText h4,
+.front-page__blockText h5,
+.front-page__blockText h6,
+.front-page__blockText p {
+  max-width: 942px;
+}
+
+.front-page__blockText h2 {
+  font-size: 40px;
+  line-height: 47px;
+  margin-bottom: 26px;
+}
+
+.front-page__blockText h2,
+.front-page__blockText h3,
+.front-page__blockText h4 {
+  margin-top: 27px;
+}
+
+.front-page__blockText h3,
+.front-page__blockText h4 {
+  font-size: 38px;
+  line-height: 44.65px;
+}
+
+.front-page__blockText h3 {
+  margin-bottom: 22px;
+}
+
+.front-page__blockText h4 {
+  margin-bottom: -2px;
+}
+
+.front-page__blockText h5 {
+  font-size: 24px;
+  margin-bottom: 1px;
+  margin-top: -2px;
+}
+
+.front-page__blockText h6 {
+  font-size: 21px;
+  margin-top: -3px;
+}
+
+.front-page__blockText ul li,
+.front-page__blockText ol li,
+.front-page__blockText p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.front-page__blockText ul,
+.front-page__blockText ol,
+.front-page__blockText p {
+  margin-bottom: 24px;
+}
+
+.front-page__blockText ul li {
+  list-style: none;
+  padding-left: 24px;
+  position: relative;
+}
+
+.front-page__blockText ul li::before {
+  background-color: #000;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 10px;
+  position: absolute;
+  top: 9px;
+  width: 5px;
+}
+
+.first-screen {
+  overflow: hidden;
+}
+
+.first-screen__items {
+  height: 426px;
+}
+
+.first-screen__item {
+  width: 100%;
+}
+
+.first-screen__item:nth-child(1) {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.first-screen__item .content {
+  padding: 20px;
+}
+
+.first-screen__item h1,
+.first-screen__item p {
+  margin: 0;
+  text-align: center;
+}
+
+.first-screen__item h1 {
+  color: #333;
+  font-size: 38px;
+  line-height: 44.65px;
+}
+
+.first-screen__item p {
+  color: #666;
+  margin-top: 24px;
+}
+
+.first-screen__itemBlockImage {
+  left: 0;
+  height: 426px;
+  position: relative;
+  top: 0;
+  width: 106%;
+}
+
+.first-screen__itemBlockImage img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.potency-pills-without-prescription {
+  padding-bottom: 79px;
+  padding-top: 81px;
+}
+
+.potency-pills-without-prescription__item h2 {
+  color: #5195B2;
+  font-size: 38px;
+  line-height: 44.65px;
+  margin: 0;
+}
+
+.potency-pills-without-prescription__item p {
+  max-width: 771px;
+}
+
+.our-best-erection {
+  background-color: #5195B2;
+  padding-bottom: 80px;
+  padding-top: 81px;
+}
+
+.our-best-erection h2,
+.our-best-erection p {
+  text-align: center;
+}
+
+.our-best-erection h2 {
+  color: #fff;
+  font-size: 38px;
+  line-height: 44.65px;
+  margin: 0;
+}
+
+.our-best-erection p {
+  color: #E6E6E6;
+  margin: 3px 0 0;
+}
+
+.erectile-dysfunction-medicines {
+  padding-bottom: 80px;
+  padding-top: 81px;
+}
+
+.erectile-dysfunction-medicines h2 {
+  color: #333;
+  font-size: 38px;
+  line-height: 44.65px;
+  margin: 0;
+}
+
+.erectile-dysfunction-medicines p {
+  color: #666;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 3px 0 0;
+}
+
+.our-online-pharmacy {
+  overflow: hidden;
+  padding-bottom: 80px;
+  padding-top: 81px;
+  position: relative;
+}
+
+.our-online-pharmacy::before {
+  background-color: rgba(81, 149, 178, 0.83);
+  bottom: 0;
+  content: "";
+  left: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.our-online-pharmacy .n_container {
+  position: relative;
+  z-index: 2;
+}
+
+.our-online-pharmacy h2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.73px;
+  margin: 0 auto;
+  max-width: 1320px;
+  text-align: center;
+}
+
+.our-online-pharmacy__illustration {
+  display: table;
+  left: 50%;
+  margin: 17px auto 0 -220px;
+  position: relative;
+  min-width: 440px;
+  max-width: 440px;
+}
+
+.our-online-pharmacy__blckBgImage {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.our-online-pharmacy__blckBgImage img {
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.why-buy-with-us {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 80px;
+  padding-top: 81px;
+}
+
+.why-buy-with-us h2 {
+  color: #5195B2;
+  display: table;
+  font-size: 38px;
+  line-height: 44.65px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.why-buy-with-us h2::after {
+  content: url("../images/svg/why-buy-with-us-illestration.svg");
+  position: absolute;
+  right: -86px;
+  top: -11px;
+  z-index: -1;
+}
+
+.why-buy-with-us__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1218px;
+}
+
+.why-buy-with-us__item {
+  max-width: 280px;
+  margin-top: 42px;
+}
+
+.why-buy-with-us__blockIcon {
+  align-items: center;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 58.75px;
+}
+
+.why-buy-with-us__blockIcon img,
+.why-buy-with-us__blockIcon svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.why-buy-with-us h3,
+.why-buy-with-us p {
+  text-align: center;
+}
+
+.why-buy-with-us h3 {
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 18px 0 4px;
+}
+
+.why-buy-with-us p {
+  color: #666;
+}
+
 /* Page - Blog */
 
 .page-blog__previews {
@@ -3122,6 +3466,35 @@ body._touch .header .menu__list > li._active .menu__arrow {
     display: none;
   }
 
+  .first-screen__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .potency-pills-without-prescription__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .potency-pills-without-prescription__item {
+    width: 50%;
+  }
+
+  .potency-pills-without-prescription__item h2 {
+    padding-right: 40px;
+  }
+
+  .why-buy-with-us__items {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .why-buy-with-us__item {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(50% - 30px);
+  }
+
   .page-blog {
     padding-bottom: 29px;
   }
@@ -3240,6 +3613,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 768px) {
+  .first-screen__item {
+    position: relative;
+    width: 50%;
+  }
+
   .about-us__items {
     display: flex;
     flex-wrap: wrap;
@@ -3255,6 +3633,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 801px) {
+  .why-buy-with-us__item {
+    width: calc(33.3333% - 30px);
+  }
+
   .footer__column:nth-child(1),
   .footer__column:nth-child(2),
   .footer__column:nth-child(3) {
@@ -3515,6 +3897,23 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 1101px) {
+  .potency-pills-without-prescription__item:nth-child(1) {
+    width: calc(40% + 3px);
+  }
+
+  .potency-pills-without-prescription__item:nth-child(2) {
+    padding-top: 15px;
+    width: calc(60% - 3px);
+  }
+
+  .why-buy-with-us__items {
+    justify-content: space-around;
+  }
+
+  .why-buy-with-us__item {
+    width: calc(25% - 30px);
+  }
+
   .about-us__column {
     width: calc(33.3333% - 50px);
   }
@@ -3569,6 +3968,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .popup__body {
     padding-top: calc(35px + 15 * ((100vw - 320px) / 1160));
+  }
+}
+
+@media screen and (max-width: 1460.98px) {
+  .first-screen__itemBlockImage {
+    width: 112%;
   }
 }
 
@@ -3653,7 +4058,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .header__blockForm {
     background-color: #fff;
     left: 0;
-    padding: 5px 30px 14px;
+    padding: 12px 30px 14px;
     position: absolute;
     right: 0;
     transition: 0.3s;
@@ -3669,7 +4074,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .header__blockForm.show-form {
-    top: 112%;
+    top: 101%;
   }
 
   .header__wrapForm {
@@ -3998,6 +4403,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     line-height: 24px;
   }
 
+  .first-screen__item .content {
+    padding-left: 0;
+  }
+
   .partnering-experts__blockImage {
     padding-bottom: 22%;
   }
@@ -4038,6 +4447,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 900.98px) {
+  .first-screen__itemBlockImage img {
+    -o-object-position: 56% 0;
+       object-position: 56% 0;
+  }
+}
+
 @media screen and (max-width: 800.98px) {
   .contact-us__customer-service .block-info {
     flex: 0 0 280px;
@@ -4046,8 +4462,56 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 767.98px) {
+  .first-screen__items {
+    height: auto;
+    min-height: 650px;
+    position: relative;
+  }
+
+  .first-screen__item:nth-child(1) {
+    min-height: 650px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .first-screen__item:nth-child(1)::before {
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+    content: "";
+    left: -30px;
+    height: 100%;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    width: calc(100% + 60px);
+  }
+
+  .first-screen__item .content {
+    padding: 35px 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .first-screen__itemBlockImage {
+    height: 100%;
+    left: -30px;
+    position: absolute;
+    right: -30px;
+    width: calc(100% + 60px);
+  }
+
   .about-us__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (max-width: 1480px) {
+  .first-screen__items {
+    min-height: calc(277px + 373 * ((100vw - 320px) / 1160));
+  }
+
+  .first-screen__item:nth-child(1) {
+    min-height: calc(277px + 373 * ((100vw - 320px) / 1160));
   }
 }
 
@@ -4066,7 +4530,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .header__blockForm {
-    padding: 0 15px 9px;
+    padding: 9px 15px;
   }
 
   .header__blockProducts {
@@ -4076,6 +4540,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .header__blockProductsColumn .blockImage {
     margin-right: 15px;
+  }
+
+  .first-screen__itemBlockImage {
+    left: -20px;
+    right: -20px;
+    width: calc(100% + 40px);
   }
 
   .page__blockImage {
@@ -4257,6 +4727,85 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .header__basket img.desktop,
   .header__basket svg.desktop {
     display: none;
+  }
+
+  .front-page__blockText {
+    padding-bottom: 26px;
+    padding-top: 23px;
+  }
+
+  .front-page__blockText h1,
+  .front-page__blockText h2,
+  .front-page__blockText h3,
+  .front-page__blockText h4,
+  .front-page__blockText h5,
+  .front-page__blockText h6 {
+    color: #000;
+  }
+
+  .front-page__blockText h2 {
+    color: #5195B2;
+  }
+
+  .potency-pills-without-prescription {
+    padding-bottom: 50px;
+    padding-top: 51px;
+  }
+
+  .potency-pills-without-prescription__item:nth-child(2) {
+    padding-top: 25px;
+  }
+
+  .our-best-erection {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .erectile-dysfunction-medicines {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .erectile-dysfunction-medicines h2,
+  .erectile-dysfunction-medicines p {
+    text-align: center;
+  }
+
+  .our-online-pharmacy {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .our-online-pharmacy h2 {
+    font-size: 31px;
+    line-height: 38px;
+  }
+
+  .our-online-pharmacy__illustration {
+    margin-top: 19px;
+  }
+
+  .why-buy-with-us {
+    padding-bottom: 50px;
+    padding-top: 51px;
+  }
+
+  .why-buy-with-us h2 {
+    margin-bottom: 6px;
+    max-width: 280px;
+  }
+
+  .why-buy-with-us h2::after {
+    right: 19px;
+    top: 12px;
+  }
+
+  .why-buy-with-us__item {
+    margin-top: 26px;
+  }
+
+  .why-buy-with-us h3 {
+    margin-top: 13px;
   }
 
   .page-blog__previews {
