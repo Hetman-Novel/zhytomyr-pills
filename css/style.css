@@ -2451,6 +2451,99 @@ body._touch .header .menu__list > li._active .menu__arrow {
   width: 5px;
 }
 
+.home-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 41px;
+}
+
+.home-products.mobile-two-column .home-products__card p:not(.discount) {
+  margin-top: auto;
+}
+
+.home-products.mobile-two-column .home-products__card .buy {
+  margin-top: 0;
+}
+
+.home-products__card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 1px 0 rgba(0, 0, 0, 0.25), 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 24px 40px -16px rgba(0, 0, 0, 0.25);
+  margin-bottom: 24px;
+  padding: 0px 10px 10px 10px;
+}
+
+.home-products .blockImage {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 281px;
+}
+
+.home-products .blockImage img,
+.home-products .blockImage svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.home-products .info {
+  background-color: #B1E2FD;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 174px;
+  padding: 10px;
+}
+
+.home-products .info h3 {
+  color: #071C25 !important;
+  font-size: 22px;
+  line-height: 25.85px;
+  margin: 0 0 4px;
+  text-align: left;
+}
+
+.home-products .info h3 a {
+  color: inherit;
+}
+
+.home-products .info p {
+  color: #CA1515;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+  text-align: left;
+}
+
+.home-products .info p.discount {
+  color: rgba(23, 23, 23, 0.6);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  text-decoration: line-through;
+}
+
+.home-products .buy {
+  align-items: center;
+  background-color: #FFBE00;
+  box-shadow: 0 1.55px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 12px 24px -15px rgba(0, 0, 0, 0.3), 0 -2px 0px 0 rgba(0, 0, 0, 0.16) inset;
+  border-radius: 12px;
+  color: #000 !important;
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  height: 52px;
+  text-align: center;
+  margin-top: auto;
+  padding: 12px;
+  width: 100%;
+}
+
 .first-screen {
   overflow: hidden;
 }
@@ -2526,7 +2619,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .our-best-erection {
   background-color: #5195B2;
-  padding-bottom: 80px;
+  padding-bottom: 56px;
   padding-top: 81px;
 }
 
@@ -2548,7 +2641,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .erectile-dysfunction-medicines {
-  padding-bottom: 80px;
+  padding-bottom: 56px;
   padding-top: 81px;
 }
 
@@ -3466,6 +3559,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
     display: none;
   }
 
+  .home-products {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .home-products__card {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
   .first-screen__items {
     display: flex;
     flex-wrap: wrap;
@@ -3668,6 +3771,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 1025px) {
+  .home-products .info h3,
+  .home-products .info p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
   .page-blog__previews {
     margin-left: auto;
     margin-right: auto;
@@ -3897,6 +4010,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 1101px) {
+  .home-products__card {
+    width: calc(25% - 24px);
+  }
+
   .potency-pills-without-prescription__item:nth-child(1) {
     width: calc(40% + 3px);
   }
@@ -3977,6 +4094,18 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 1400.98px) {
+  .home-products .blockImage {
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 1400.98px) and (max-width: 1480px) {
+  .home-products .blockImage {
+    height: calc(180px + 90 * ((100vw - 320px) / 1160));
+  }
+}
+
 @media screen and (max-width: 1330.98px) {
   .header__blockLogo {
     min-width: 150px;
@@ -4019,6 +4148,25 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 1100.98px) {
+  .home-products {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home-products:not(.mobile-two-column) {
+    max-width: 672px;
+  }
+
+  .home-products__card {
+    max-width: 312px;
+    width: 312px;
+  }
+
+  .home-products .blockImage {
+    height: 281px;
+  }
+
   .about-us__column:not(:last-child) {
     margin-bottom: 29px;
   }
@@ -4462,6 +4610,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (max-width: 767.98px) {
+  .home-products.mobile-two-column {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .home-products.mobile-two-column .home-products__card {
+    max-width: 100%;
+    width: calc(50% - 24px);
+  }
+
   .first-screen__items {
     height: auto;
     min-height: 650px;
@@ -4542,6 +4700,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-right: 15px;
   }
 
+  .home-products.mobile-two-column .home-products__card .blockImage {
+    height: 510px;
+  }
+
   .first-screen__itemBlockImage {
     left: -20px;
     right: -20px;
@@ -4573,6 +4735,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin: 12px -15px 0;
     padding-left: 0;
     width: calc(100% + 30px);
+  }
+}
+
+@media screen and (max-width: 720.98px) and (max-width: 1480px) {
+  .home-products.mobile-two-column .home-products__card .blockImage {
+    height: calc(160px + 350 * ((100vw - 320px) / 1160));
   }
 }
 
@@ -4747,6 +4915,34 @@ body._touch .header .menu__list > li._active .menu__arrow {
     color: #5195B2;
   }
 
+  .home-products.mobile-two-column {
+    margin-left: -5.5px;
+    margin-right: -5.5px;
+  }
+
+  .home-products.mobile-two-column .home-products__card {
+    margin: 0 5.5px 11px;
+    width: calc(50% - 11px);
+  }
+
+  .home-products__card {
+    max-width: 324px;
+    width: 324px;
+  }
+
+  .home-products .info h3,
+  .home-products .info p {
+    text-align: center;
+  }
+
+  .home-products .info p.discount {
+    margin-bottom: 12px;
+  }
+
+  .home-products .buy {
+    height: 60px;
+  }
+
   .potency-pills-without-prescription {
     padding-bottom: 50px;
     padding-top: 51px;
@@ -4757,12 +4953,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .our-best-erection {
-    padding-bottom: 50px;
+    padding-bottom: 26px;
     padding-top: 50px;
   }
 
   .erectile-dysfunction-medicines {
-    padding-bottom: 50px;
+    padding-bottom: 26px;
     padding-top: 50px;
   }
 
