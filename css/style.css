@@ -3866,6 +3866,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   height: 16px;
 }
 
+.contact-us__blockForm input[type=submit],
 .view-more {
   align-items: center;
   background-color: #5195B2;
@@ -3882,6 +3883,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
   padding: 0 12px;
   width: 151px;
   text-align: center;
+}
+
+.contact-us__blockForm input[type=submit] {
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-left: 0;
 }
 
 /* Footer */
