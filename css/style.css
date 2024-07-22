@@ -3800,7 +3800,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .wrap-price-and-buttons .price {
+  align-items: center;
   color: #219D35;
+  display: flex;
+  flex-wrap: wrap;
   font-family: "Inter", sans-serif;
   font-size: 40px;
   font-weight: 900;
@@ -3809,7 +3812,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .wrap-price-and-buttons .price span {
-  margin-right: 13px;
+  margin-right: 17px;
 }
 
 .wrap-price-and-buttons .price img,
@@ -6551,9 +6554,11 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .contact-us__blockForm {
     padding: 32px 10px 11px;
   }
+}
 
+@media screen and (max-width: 480.98px) {
   .wrap-price-and-buttons .price span {
-    display: table;
+    width: 100%;
   }
 
   .wrap-price-and-buttons .price img,
