@@ -1,0 +1,74 @@
+.number {
+    align-items: center;
+    border: 1px solid rgba(153, 153, 153, 0.2);
+    border-radius: 10px;
+	display: flex;
+    height: 47px;
+    padding: 0 23px 0 20px;
+    width: 127.77px;
+}
+.number input {
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    outline: none;
+    min-height: 100%;
+    padding: 0 4px 2px;
+    text-align: center;
+    width: 100%;
+}
+.number input::-webkit-outer-spin-button,
+.number input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.number__minus,
+.number__plus {
+	/* Курсой в виде руки при навидении */
+	cursor: pointer;
+	
+	/* Не дает появляться синему фону при нажатии на + и - */
+	-moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    position: relative;
+}
+.number__minus {
+    bottom: 1px;
+    height: 3px;
+    position: relative;
+	width: 12.59px;
+}
+.number__plus {
+    height: 14px;
+    top: 1px;
+	width: 12.59px;
+}
+.number__minus svg,
+.number__minus img,
+.number__plus svg,
+.number__plus img {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+@media (max-width: 800px) {
+
+    .number {
+        height: 55px;
+        margin: 17px auto 10px;
+        width: 157px;
+    }
+    .number input {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        padding-bottom: 1px;
+    }
+}
