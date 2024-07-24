@@ -7,6 +7,16 @@
     padding: 0 23px 0 20px;
     width: 127.77px;
 }
+.number input[type=number] {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+.number input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+.number input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 .number input {
     border: none;
     font-family: 'Inter', sans-serif;
@@ -30,12 +40,6 @@
 .number__plus {
 	/* Курсой в виде руки при навидении */
 	cursor: pointer;
-	
-	/* Не дает появляться синему фону при нажатии на + и - */
-	-moz-user-select: none;
-    -o-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
     user-select: none;
     position: relative;
 }
