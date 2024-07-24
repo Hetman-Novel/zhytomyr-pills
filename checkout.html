@@ -4,12 +4,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240723183220">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240723183220">
-   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240723183220">
-   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20240723183220">
-   <link rel="stylesheet" href="files/increase-and-decrease-value/style.css?_v=20240723183220">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240723183220">
+   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240724202810">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240724202810">
+   <link rel="stylesheet" href="files/intl-tel-input-master/build/css/intlTelInput.css?_v=20240724202810">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240724202810">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20240724202810">
+   <link rel="stylesheet" href="files/increase-and-decrease-value/style.css?_v=20240724202810">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240724202810">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Checkout - Zhytomyr Pills</title>
 </head>
@@ -79,7 +80,7 @@
             <div class="header__blockForm">
                <div class="header__wrapForm">
                   <form role="search" method="get" class="woocommerce-product-search" action="#">
-                     <label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+                     <label class="screen-reader-text">Search for:</label>
                      <input type="search" class="search-field" placeholder="Search here..." value="" name="s">
                      <button type="submit" value="Search" class="">Search</button>
                      <!--<input type="hidden" name="post_type" value="product">-->
@@ -310,6 +311,127 @@
 
             </div>
 
+            <section class="address-and-payment">
+               <div class="n_container">
+                  <div class="address-and-payment__items">
+                     <div class="address-and-payment__item">
+                        <h2>Delivery Address</h2>
+                        <div class="address-and-payment__wrap-fields">
+                           <div class="address-and-payment__wrap-field">
+                              <label>First Name</label>
+                              <input type="text" placeholder="Max" value="Max">
+                           </div>
+                           <div class="address-and-payment__wrap-field">
+                              <label>Last Name</label>
+                              <input type="text" placeholder="Verstappen" value="Verstappen">
+                           </div>
+                           <div class="address-and-payment__wrap-field">
+                              <label>Country</label>
+                              <select class="checkout-select2">
+                                 <option value="USA">USA</option>
+                                 <option value="England">England</option>
+                                 <option value="Finland">Finland</option>
+                                 <option value="Scotland">Scotland</option>
+                                 <option value="Denmark">Denmark</option>
+                              </select>
+                           </div>
+                           <div class="address-and-payment__wrap-field">
+                              <label>City</label>
+                              <select class="checkout-select2">
+                                 <option value="Los Angeles">Los Angeles</option>
+                                 <option value="Florida">Florida</option>
+                                 <option value="California">California</option>
+                                 <option value="Michigan">Michigan</option>
+                                 <option value="New Jersey">New Jersey</option>
+                              </select>
+                           </div>
+                           <div class="address-and-payment__wrap-field">
+                              <label>Zip/Postal code</label>
+                              <input type="number" placeholder="33355598716" value="33355598716">
+                           </div>
+                           <div class="address-and-payment__wrap-field">
+                              <label>Phone number</label>
+                              <input id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000">
+                           </div>
+                           <div class="address-and-payment__wrap-field full-width">
+                              <label>Street Address</label>
+                              <input type="text" placeholder="st. Verstappen, 12, avenue de la boubou" value="st. Verstappen, 12, avenue de la boubou">
+                           </div>
+                           <div class="address-and-payment__wrap-field full-width">
+                              <label>Email</label>
+                              <input type="text" placeholder="best_racer_in_the_world@gmail.com" value="best_racer_in_the_world@gmail.com">
+                           </div>
+                        </div>
+                        <label class="custom-checkbox">
+                           <input type="checkbox" class="custom-checkbox__input" checked>
+                           <span class="custom-checkbox__box"></span>
+                           <span class="custom-checkbox__text">My billing and shipping address are the same</span>
+                        </label>
+                     </div>
+                     <div class="address-and-payment__item">
+                        <h2>Payment</h2>
+                        <label class="credit-card active">
+                           <span class="head">
+                              <span class="wrap">
+                                 <input type="radio" name="payment" checked>
+                                 <span class="custom-checked">
+                                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M8.0411 0.972656L3.1713 5.84245L0.957764 3.62891" stroke="white" stroke-width="1.29703" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                 </span>
+                                 <span class="name">Credit Card</span>
+                                 <span class="text">Pay credit card</span>
+                              </span>
+                              <span class="wrap-icons">
+                                 <img src="images/svg/payment-visa-icon.svg" alt="">
+                                 <img src="images/svg/payment-method-icon.svg" alt="">
+                                 <img src="images/svg/payment-amex-icon.svg" alt="">
+                              </span>
+                           </span>
+                           <span class="wrap-data">
+                              <span class="label">Card number</span>
+                              <span class="number-card">
+                                 <img src="images/svg/payment-number-card-icon.svg" alt="">
+                                 <input type="text" placeholder="1234 1234 1234 1234" id="payment-number-card">
+                              </span>
+                              <span class="wrap-fields">
+                                 <span class="wrap-field">
+                                    <span class="label">Expiry</span>
+                                    <input type="text" placeholder="06 / 24" id="payment-expiry">
+                                 </span>
+                                 <span class="wrap-field">
+                                    <span class="label">CVV</span>
+                                    <input type="password" placeholder="***" id="payment-cvv">
+                                 </span>
+                              </span>
+                           </span>
+                        </label>
+                        <label class="bank-transfer" id="bank-transfer-checked">
+                           <span class="head">
+                              <span class="wrap">
+                                 <input type="radio" name="payment">
+                                 <span class="custom-checked">
+                                    <svg width="9" height="7" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M8.0411 0.972656L3.1713 5.84245L0.957764 3.62891" stroke="white" stroke-width="1.29703" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                 </span>
+                                 <span class="name">Bank Transfer</span>
+                                 <span class="text">Pay via bank transfer</span>
+                              </span>
+                              <img src="images/svg/bank-transfer-payment-icon.svg" alt="">
+                           </span>
+                           <span class="text-info">We will ship the order as soon as we receive the money, which takes 3-5 days on average. Payment details will come in an email letter. If you have not received this letter - please check your spam folder. Or write us a pigeon letter - this way we will answer you in 241 working days. Have a good night!</span>
+                        </label>
+                        <p>We protect your payment information using SSL encryption to provide bank-level security.</p>
+                        <div class="wrap-button">
+                           <button class="order-now" type="submit">Order now</button>
+                           <img src="images/svg/norton-security-checkout-icon.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
          </form>
 
       </main>
@@ -400,10 +522,21 @@
 
    </div>
 
-   <script src="js/script.min.js?_v=20240723183220"></script>
+   <script src="js/script.min.js?_v=20240724202810"></script>
 
-   <script src="files/js/jquery-3.6.1.min.js?_v=20240723183220"></script>
-   <script src="files/increase-and-decrease-value/script.js?_v=20240723183220"></script>
+   <script src="files/js/jquery-3.6.1.min.js?_v=20240724202810"></script>
+   <script src="files/increase-and-decrease-value/script.js?_v=20240724202810"></script>
+   
+   <script src="files/masked-for-input/masked-input-plugin.js?_v=20240724202810"></script>
+   <script src="files/masked-for-input/init.js?_v=20240724202810"></script>
+
+   <script src="files/select2/js/select2.min.js?_v=20240724202810"></script>
+   <script src="files/select2/js/init.js?_v=20240724202810"></script>
+
+   <script src="files/js/checkout.js?_v=20240724202810"></script>
+
+   <script src="files/intl-tel-input-master/build/js/intlTelInput.min.js?_v=20240724202810"></script>
+   <script src="files/intl-tel-input-master/build/js/init.js?_v=20240724202810"></script>
 
 </body>
 </html>
