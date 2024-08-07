@@ -78,4 +78,27 @@ document.addEventListener('DOMContentLoaded', function () {
    }
    */
 
+
+   const billingCheckbox = document.getElementById('my-billing-checkbox');
+   const additionalFields = document.getElementById('additional-fields');
+   const addressAndPaymentItems = document.querySelector('.address-and-payment__items');
+
+   if (billingCheckbox && additionalFields) {
+      function toggleAdditionalFields() {
+         if (billingCheckbox.checked) {
+            additionalFields.classList.add('show');
+            addressAndPaymentItems.classList.add('show-additional-fields');
+         } else {
+            additionalFields.classList.remove('show');
+            addressAndPaymentItems.classList.remove('show-additional-fields');
+         }
+      }
+
+      // Initial check
+      toggleAdditionalFields();
+
+      // Add event listener for changes
+      billingCheckbox.addEventListener('change', toggleAdditionalFields);
+   }
+
 });
