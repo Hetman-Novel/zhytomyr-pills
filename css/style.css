@@ -4840,7 +4840,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
 .list-title li.name {
   text-align: left;
-  width: calc(100% - 132px - 132px - 128px);
+  width: calc(100% - 132px - 149px - 148px);
 }
 
 .list-title li.quantity {
@@ -4853,7 +4853,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   bottom: -12px;
   left: 45%;
   position: absolute;
-  transform: translateX(-50%);
+  transform: translateX(-95%);
 }
 
 .list-title li.price {
@@ -4866,7 +4866,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   bottom: -12px;
   left: 60%;
   position: absolute;
-  transform: translateX(-50%);
+  transform: translateX(-120%);
 }
 
 .list-title li.subtotal {
@@ -4879,7 +4879,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   bottom: -12px;
   left: 55%;
   position: absolute;
-  transform: translateX(-50%);
+  transform: translateX(-88%);
 }
 
 .checkout-products-list {
@@ -4923,8 +4923,8 @@ body._touch .header .menu__list > li._active .menu__arrow {
   line-height: 25.85px;
   margin-right: auto;
   padding-left: 25px;
-  padding-right: 35px;
-  width: calc(100% - 84px - 127.77px - 132px - 128px);
+  padding-right: 28px;
+  width: calc(100% - 84px - 127.77px - 149px - 148px);
 }
 
 .checkout-products-list li .quantity {
@@ -4946,14 +4946,34 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .checkout-products-list li .price {
-  flex: 0 0 132px;
-  width: 132px;
+  flex: 0 0 149px;
+  text-align: center;
+  width: 149px;
 }
 
 .checkout-products-list li .subtotal {
+  display: flex;
+  justify-content: space-between;
   font-weight: 600;
-  flex: 0 0 128px;
-  width: 128px;
+  flex: 0 0 148px;
+  width: 148px;
+}
+
+.checkout-products-list li .delete-item {
+  cursor: pointer;
+  height: 22px;
+  position: absolute;
+  right: 10px;
+  top: 44px;
+  width: 22px;
+}
+
+.checkout-products-list li .delete-item::after {
+  content: url("data:image/svg+xml;charset=UTF-8,%3csvg width='22' height='23' viewBox='0 0 22 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.5 7.375V18.375C16.5 19.1344 15.8844 19.75 15.125 19.75H6.875C6.11561 19.75 5.5 19.1344 5.5 18.375V7.375H16.5ZM12.375 9.4375C11.9953 9.4375 11.6875 9.7453 11.6875 10.125V15.625L11.6921 15.7052C11.7318 16.0471 12.0224 16.3125 12.375 16.3125C12.7547 16.3125 13.0625 16.0047 13.0625 15.625V10.125L13.0579 10.0448C13.0182 9.7029 12.7276 9.4375 12.375 9.4375ZM9.625 9.4375C9.2453 9.4375 8.9375 9.7453 8.9375 10.125V15.625L8.94213 15.7052C8.98184 16.0471 9.27243 16.3125 9.625 16.3125C10.0047 16.3125 10.3125 16.0047 10.3125 15.625V10.125L10.3079 10.0448C10.2682 9.7029 9.97757 9.4375 9.625 9.4375Z' fill='%239D9D9D'/%3e%3cpath d='M4.125 6.6875C3.7453 6.6875 3.4375 6.3797 3.4375 6C3.4375 5.64743 3.7029 5.35684 4.04482 5.31713L4.125 5.3125H17.875C18.2547 5.3125 18.5625 5.6203 18.5625 6C18.5625 6.35257 18.2971 6.64316 17.9552 6.68287L17.875 6.6875H4.125Z' fill='%239D9D9D'/%3e%3cpath d='M13.0625 6V5.3125C13.0625 4.95993 12.7971 4.66934 12.4552 4.62963L12.375 4.625H9.625C9.27243 4.625 8.98184 4.8904 8.94213 5.23232L8.9375 5.3125V6H7.5625V5.3125C7.5625 4.21409 8.42113 3.31623 9.50381 3.2535L9.625 3.25H12.375C13.4734 3.25 14.3713 4.10863 14.434 5.19131L14.4375 5.3125V6H13.0625Z' fill='%239D9D9D'/%3e%3c/svg%3e");
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
 }
 
 ul.subtotal li {
@@ -6010,6 +6030,17 @@ ul.subtotal li:nth-child(2) {
   .checkout-products-list li .price .title,
   .checkout-products-list li .subtotal .title {
     display: none;
+  }
+
+  .checkout-products-list li .subtotal {
+    position: relative;
+    padding-right: 28px;
+  }
+
+  .checkout-products-list li .delete-item {
+    right: 0;
+    transform: translateY(-50%);
+    top: calc(50% + 2px);
   }
 
   ul.subtotal {
@@ -7072,6 +7103,7 @@ ul.subtotal li:nth-child(2) {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 0 1px 0 rgba(0, 0, 0, 0.21), 0 4px 6px 0 rgba(0, 0, 0, 0.04), 0 16px 40px -16px rgba(0, 0, 0, 0.12);
     padding: 10px;
     flex-wrap: wrap;
+    position: relative;
     width: 100%;
   }
 
@@ -7080,7 +7112,6 @@ ul.subtotal li:nth-child(2) {
   }
 
   .checkout-products-list li .name {
-    padding-right: 0;
     width: calc(100% - 84px);
   }
 
