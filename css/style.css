@@ -5003,6 +5003,10 @@ ul.subtotal li:nth-child(2) {
   max-width: 1110px;
 }
 
+.address-and-payment__items.show-additional-fields {
+  align-items: flex-start;
+}
+
 .address-and-payment__item {
   background-color: #fff;
   border-radius: 24.2px;
@@ -5319,6 +5323,15 @@ ul.subtotal li:nth-child(2) {
   text-align: center;
   padding: 0 15px;
   width: 291px;
+}
+
+.address-and-payment__additional-fields {
+  display: none;
+  margin-top: 30px;
+}
+
+.address-and-payment__additional-fields.show {
+  display: block;
 }
 
 .address-and-payment__wrap-fields {

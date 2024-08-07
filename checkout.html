@@ -4,13 +4,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240807173844">
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240807173844">
-   <link rel="stylesheet" href="files/intl-tel-input-master/build/css/intlTelInput.css?_v=20240807173844">
-   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240807173844">
-   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20240807173844">
-   <link rel="stylesheet" href="files/increase-and-decrease-value/style.css?_v=20240807173844">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240807173844">
+   <link rel="stylesheet" href="files/lazy-load-for-images/lazy-load-for-images.css?_v=20240807181727">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20240807181727">
+   <link rel="stylesheet" href="files/intl-tel-input-master/build/css/intlTelInput.css?_v=20240807181727">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240807181727">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20240807181727">
+   <link rel="stylesheet" href="files/increase-and-decrease-value/style.css?_v=20240807181727">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240807181727">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>Checkout - Zhytomyr Pills</title>
 </head>
@@ -368,10 +368,59 @@
                            </div>
                         </div>
                         <label class="custom-checkbox">
-                           <input type="checkbox" class="custom-checkbox__input _require" checked>
+                           <input id="my-billing-checkbox" type="checkbox" class="custom-checkbox__input">
                            <span class="custom-checkbox__box"></span>
                            <span class="custom-checkbox__text">My billing and shipping address are the same</span>
                         </label>
+                        <div id="additional-fields" class="address-and-payment__additional-fields">
+                           <div class="address-and-payment__wrap-fields">
+                              <div class="address-and-payment__wrap-field">
+                                 <label>First Name</label>
+                                 <input class="_require" type="text" placeholder="Max">
+                                 <img class="valid-icon" src="images/svg/valid-field-icon.svg" alt="">
+                              </div>
+                              <div class="address-and-payment__wrap-field">
+                                 <label>Last Name</label>
+                                 <input class="_require" type="text" placeholder="Verstappen">
+                                 <img class="valid-icon" src="images/svg/valid-field-icon.svg" alt="">
+                              </div>
+                              <div class="address-and-payment__wrap-field">
+                                 <label>Country</label>
+                                 <select class="checkout-select2">
+                                    <option value="USA">USA</option>
+                                    <option value="England">England</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="Scotland">Scotland</option>
+                                    <option value="Denmark">Denmark</option>
+                                 </select>
+                              </div>
+                              <div class="address-and-payment__wrap-field">
+                                 <label>City</label>
+                                 <select class="checkout-select2">
+                                    <option value="Los Angeles">Los Angeles</option>
+                                    <option value="Florida">Florida</option>
+                                    <option value="California">California</option>
+                                    <option value="Michigan">Michigan</option>
+                                    <option value="New Jersey">New Jersey</option>
+                                 </select>
+                              </div>
+                              <div class="address-and-payment__wrap-field full-width">
+                                 <label>Zip/Postal code</label>
+                                 <input class="_require" type="number" placeholder="33355598716">
+                                 <img class="valid-icon" src="images/svg/valid-field-icon.svg" alt="">
+                              </div>
+                              <div class="address-and-payment__wrap-field full-width">
+                                 <label>Street Address</label>
+                                 <input class="_require" type="text" placeholder="st. Verstappen, 12, avenue de la boubou">
+                                 <img class="valid-icon" src="images/svg/valid-field-icon.svg" alt="">
+                              </div>
+                              <div class="address-and-payment__wrap-field full-width">
+                                 <label>Billing address</label>
+                                 <input class="_require" type="text">
+                                 <img class="valid-icon" src="images/svg/valid-field-icon.svg" alt="">
+                              </div>
+                           </div>
+                        </div>
                      </div>
                      <div class="address-and-payment__item">
                         <h2>Payment</h2>
@@ -536,26 +585,26 @@
       <button type="button" id="close-block-cookie">Accept Cookies</button>
    </div>
 </div>
-<script src="files/js/cookies.js?_v=20240807173844"></script>
+<script src="files/js/cookies.js?_v=20240807181727"></script>
    </div>
 
-   <script src="js/script.min.js?_v=20240807173844"></script>
+   <script src="js/script.min.js?_v=20240807181727"></script>
 
-   <script src="files/js/jquery-3.6.1.min.js?_v=20240807173844"></script>
-   <script src="files/increase-and-decrease-value/script.js?_v=20240807173844"></script>
+   <script src="files/js/jquery-3.6.1.min.js?_v=20240807181727"></script>
+   <script src="files/increase-and-decrease-value/script.js?_v=20240807181727"></script>
    
-   <script src="files/masked-for-input/masked-input-plugin.js?_v=20240807173844"></script>
-   <script src="files/masked-for-input/init.js?_v=20240807173844"></script>
+   <script src="files/masked-for-input/masked-input-plugin.js?_v=20240807181727"></script>
+   <script src="files/masked-for-input/init.js?_v=20240807181727"></script>
 
-   <script src="files/select2/js/select2.min.js?_v=20240807173844"></script>
-   <script src="files/select2/js/init.js?_v=20240807173844"></script>
+   <script src="files/select2/js/select2.min.js?_v=20240807181727"></script>
+   <script src="files/select2/js/init.js?_v=20240807181727"></script>
 
-   <script src="files/js/checkout.js?_v=20240807173844"></script>
+   <script src="files/js/checkout.js?_v=20240807181727"></script>
 
-   <script src="files/intl-tel-input-master/build/js/intlTelInput.min.js?_v=20240807173844"></script>
-   <script src="files/intl-tel-input-master/build/js/init.js?_v=20240807173844"></script>
+   <script src="files/intl-tel-input-master/build/js/intlTelInput.min.js?_v=20240807181727"></script>
+   <script src="files/intl-tel-input-master/build/js/init.js?_v=20240807181727"></script>
 
-   <script src="files/js/validation-form.js?_v=20240807173844"></script>
+   <script src="files/js/validation-form.js?_v=20240807181727"></script>
 
 </body>
 </html>
